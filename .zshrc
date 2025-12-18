@@ -20,6 +20,7 @@ bindkey '^y' autosuggest-accept
 
 alias wezimg="wezterm imgcat"
 alias cd="z"
+alias rm="trash-put"
 
 #options
 setopt correct
