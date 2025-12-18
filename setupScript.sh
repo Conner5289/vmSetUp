@@ -1,6 +1,11 @@
 #! /bin/bash
 
+cp "./FiraCode.zip" "$HOME/.local/share/fonts"
+unzip "$HOME/.local/share/fonts/FiraCode.zip"
+fc-cache -f -v
+
 mkdir -p "$HOME"/.config/nvim
+
 ln -sf "./.wezterm.lua" "$HOME/.wezterm.lua"
 ln -sf "./.zshrc" "$HOME/.zshrc"
 ln -sf "./starship.toml" "$HOME/.config/starship.toml"
