@@ -2,7 +2,7 @@
 
 mkdir -p "$HOME/.local/share/fonts"
 cp "./FiraCode.zip" "$HOME/.local/share/fonts"
-unzip "$HOME/.local/share/fonts/FiraCode.zip"
+unzip "$HOME/.local/share/fonts/FiraCode.zip" -d "$HOME/.local/share/fonts"
 fc-cache -f -v
 
 mkdir -p "$HOME"/.config/nvim
@@ -54,6 +54,8 @@ curl https://sh.rustup.rs -sSf | sh
 curl -sS https://starship.rs/install.sh | sh
 
 pipx install trash-cli
+
+cargo install eza
 
 rm -rf .git
 
