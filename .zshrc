@@ -42,6 +42,8 @@ export GIT_EDITOR=nvim
 export VISUAL=nvim
 export EDITOR=nvim
 
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 #Temp adds path to PATH
 adp() {

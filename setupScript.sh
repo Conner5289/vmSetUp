@@ -26,7 +26,7 @@ if [[ "$PKG_MGR" == "apt" ]]; then
     sudo apt update -y
     sudo apt install wezterm -y
 
-    sudo apt-get install ninja-build gettext cmake curl build-essential git
+    sudo apt-get install ninja-build gettext cmake curl build-essential git -y
 fi
 
 if [[ "$PKG_MGR" == "dnf" ]]; then
