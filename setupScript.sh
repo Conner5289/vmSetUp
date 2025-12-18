@@ -52,6 +52,8 @@ curl https://sh.rustup.rs -sSf | sh
 
 curl -sS https://starship.rs/install.sh | sh
 
+pipx install trash-cli
+
 rm -rf .git
 
 echo "Done"
