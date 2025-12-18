@@ -1,14 +1,15 @@
 #! /bin/bash
 
+mkdir -p "$HOME/.local/share/fonts"
 cp "./FiraCode.zip" "$HOME/.local/share/fonts"
 unzip "$HOME/.local/share/fonts/FiraCode.zip"
 fc-cache -f -v
 
 mkdir -p "$HOME"/.config/nvim
 
-ln -sf "./.wezterm.lua" "$HOME/.wezterm.lua"
-ln -sf "./.zshrc" "$HOME/.zshrc"
-ln -sf "./starship.toml" "$HOME/.config/starship.toml"
+cp "./.wezterm.lua" "$HOME/.wezterm.lua"
+cp "./.zshrc" "$HOME/.zshrc"
+cp "./starship.toml" "$HOME/.config/starship.toml"
 
 if command -v apt >/dev/null 2>&1; then
     PKG_MGR="apt"

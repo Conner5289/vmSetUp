@@ -21,6 +21,9 @@ bindkey '^y' autosuggest-accept
 alias wezimg="wezterm imgcat"
 alias cd="z"
 alias rm="trash-put"
+alias la="eza -a"
+alias ls="eza --icons"
+
 
 #options
 setopt correct
