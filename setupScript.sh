@@ -45,3 +45,5 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 curl https://sh.rustup.rs -sSf | sh
 
 rm .git
+
+echo "Done"
