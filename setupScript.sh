@@ -42,7 +42,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 sudo $PKG_MGR install bat -y
 
-./nvimBuild.sh
+Bash ./nvimBuild.sh
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
