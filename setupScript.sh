@@ -50,6 +50,8 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 
 curl https://sh.rustup.rs -sSf | sh
 
+curl -sS https://starship.rs/install.sh | sh
+
 rm -rf .git
 
 echo "Done"
