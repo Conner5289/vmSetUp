@@ -16,14 +16,14 @@ if [[ "$PKG_MGR" == "apt" ]]; then
     curl -fsSL https://apt.fury.io/wez/gpg.key | sudo gpg --yes --dearmor -o /usr/share/keyrings/wezterm-fury.gpg
     echo 'deb [signed-by=/usr/share/keyrings/wezterm-fury.gpg] https://apt.fury.io/wez/ * *' | sudo tee /etc/apt/sources.list.d/wezterm.list
     sudo chmod 644 /usr/share/keyrings/wezterm-fury.gpg
-    sudo apt update
+    sudo apt update -y
     sudo apt install wezterm -y
 
     sudo apt-get install ninja-build gettext cmake curl build-essential git
 fi
 
 if [[ "$PKG_MGR" == "dnf" ]]; then
-    sudo dnf copr enable wezfurlong/wezterm-nightly
+    sudo dnf copr enable wezfurlong/wezterm-nightly -y
     sudo dnf install wezterm -y
 
     sudo dnf -y install ninja-build cmake gcc make gettext curl glibc-gconv-extra git
@@ -44,6 +44,6 @@ curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh 
 
 curl https://sh.rustup.rs -sSf | sh
 
-rm .git
+rm -rf .git
 
 echo "Done"
