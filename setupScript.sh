@@ -1,7 +1,9 @@
 #! /bin/bash
 
-ln -sf "$SCRIPT_DIR/.wezterm.lua" "$HOME/.wezterm.lua"
-ln -sf "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
+mkdir -p "$HOME"/.config/nvim
+ln -sf "./.wezterm.lua" "$HOME/.wezterm.lua"
+ln -sf "./.zshrc" "$HOME/.zshrc"
+ln -sf "./starship.toml" "$HOME/.config/starship.toml"
 
 if command -v apt >/dev/null 2>&1; then
     PKG_MGR="apt"
@@ -36,7 +38,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 sudo $PKG_MGR install bat -y
 
 ./nvimBuild.sh
-mkdir -p "$HOME"/.config/nvim
 git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
