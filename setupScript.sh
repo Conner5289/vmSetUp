@@ -1,7 +1,7 @@
 #! /bin/bash
 
-ln -s ./.wezterm.lua ["$HOME"]
-ln -s ./.zshrc ["$HOME"]
+ln -sf "$SCRIPT_DIR/.wezterm.lua" "$HOME/.wezterm.lua"
+ln -sf "$SCRIPT_DIR/.zshrc" "$HOME/.zshrc"
 
 if command -v apt >/dev/null 2>&1; then
     PKG_MGR="apt"
