@@ -1,7 +1,9 @@
 #! /bin/bash
 set -euo pipefail
 
-cd "$HOME/NeoVimGit" || exit 1
+mkdir -p "$HOME/NeoVimGit"
+
+cd "$HOME/NeoVimGit"
 
 if [ -d "neovim" ]; then
     rm -rf neovim
