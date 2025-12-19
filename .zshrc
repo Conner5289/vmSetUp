@@ -11,7 +11,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 #oh-my-zsh
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
-plugins=(git zsh-autosuggestions colored-man-pages gh themes vi-mode zsh-syntax-highlighting dnf apt sudo)
+plugins=(git zsh-autosuggestions colored-man-pages gh themes vi-mode zsh-syntax-highlighting dnf sudo)
 source $ZSH/oh-my-zsh.sh
 
 # autosuggest-accept
