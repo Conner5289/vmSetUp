@@ -28,6 +28,7 @@ if [[ "$PKG_MGR" == "apt" ]]; then
     sudo apt install wezterm -y
 
     sudo apt-get install ninja-build gettext cmake curl build-essential git -y
+    sudo apt install rofi -y
 fi
 
 if [[ "$PKG_MGR" == "dnf" ]]; then
@@ -35,6 +36,8 @@ if [[ "$PKG_MGR" == "dnf" ]]; then
     sudo dnf install wezterm -y
 
     sudo dnf -y install ninja-build cmake gcc make gettext curl glibc-gconv-extra git
+
+    sudo dnf install rofi -y
 fi
 
 sudo $PKG_MGR install zsh -y
